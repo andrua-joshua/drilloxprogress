@@ -1,0 +1,11 @@
+Manifest-Version: 1.0
+Main-Class: com.example.drilloxprocessco.laucher
+Class-Path: formsfx-core-11.3.2.jar javafx-base-17.0.1-linux.jar javafx-
+ web-17.0.1-linux.jar javafx-media-17.0.1.jar javafx-fxml-17.0.1-linux.j
+ ar tilesfx-11.48.jar javafx-controls-17.0.1-linux.jar javafx-fxml-17.0.
+ 1.jar ikonli-javafx-12.2.0.jar javafx-graphics-17.0.1-linux.jar javafx-
+ graphics-17.0.1.jar javafx-base-17.0.1.jar bootstrapfx-core-0.4.0.jar v
+ alidatorfx-0.1.13.jar ikonli-core-12.2.0.jar javafx-web-17.0.1.jar java
+ fx-media-17.0.1-linux.jar controlsfx-11.1.0.jar javafx-controls-17.0.1.
+ jar
+

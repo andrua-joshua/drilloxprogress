@@ -1,0 +1,84 @@
+#icon{
+    -fx-text-fill: "green";
+    -fx-font-family: "verdana";
+    -fx-font-size: 30;
+}
+#taskbar{
+    -fx-border-width: 2;
+    -fx-border-color: "black";
+}
+#Title{
+    -fx-text-fill: "orange";
+    -fx-font-size: 24;
+    -fx-background-color:#555555;
+    -fx-Alignment:"center";
+}
+#userProfile{
+    -fx-Alignment:"center";
+}
+#footer{
+    -fx-Alignment:"center";
+    -fx-background-color:#222222;
+}
+#TargetSkills{
+    -fx-font-size:15;
+    -fx-text-fill:"blue";
+}
+#footerTag{
+    -fx-text-fill: "green";
+}
+#footerTag1{
+    -fx-text-fill: "green";
+}
+#RevTitle{
+    -fx-font-size: 17;
+    -fx-text-fill:"blue";
+    -fx-padding-left : 10;
+}
+#ProTitle{
+    -fx-font-size: 17;
+    -fx-text-fill: "blue";
+    -fx-padding-left:10;
+}
+#revBooks{
+}
+#al{
+    -fx-background-color:#111111
+}
+#RBTitle{
+    -fx-font-size:20;
+    -fx-text-fill:"blue";
+}
+#EstimatedAccomplishmentTimeValue,#TotalPagesValue{
+    -fx-text-fill:"purple";
+}
+#AverageChapterPagesValue,#TotalChaptersValue{
+    -fx-text-fill:"orange";
+}
+ScrollPane{
+    -fx-padding:5;
+}
+#Nbook,#Heading,#projectName,#viewName{
+    -fx-font-size:20;
+    -fx-text-fill:"blue"
+}
+#HeadingC{
+    -fx-font-size:20;
+    -fx-text-fill:"orange"
+}
+#update{
+    -fx-background-color:"yellowgreen"
+}
+#Calculator{
+    -fx-background-color:"orange"
+}
+#Terminator{
+    -fx-background-color:"red";
+}
+#lth,#ltd{
+    -fx-font-size:17;
+    -fx-text-fill:#850576
+}
+#proReqs{
+    -fx-border-width: 0;
+}

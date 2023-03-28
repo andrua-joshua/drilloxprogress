@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.VBox?>
+
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.Spinner?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.shape.Line?>
+<AnchorPane fx:id="root1" xmlns:fx="http://javafx.com/fxml"
+            maxWidth="-Infinity" maxHeight="-Infinity" minWidth="-Infinity" minHeight="-Infinity"
+            fx:controller="com.example.drilloxprocessco.NewRev">
+    <AnchorPane fx:id="taskbar" maxWidth="699" minWidth="699">
+        <Label fx:id="icon" text="DPp" layoutX="5"/>
+        <Label fx:id="Title" text="DrilloxPp" layoutX="100" minWidth="600" maxWidth="600" minHeight="49"
+               maxHeight="49"/>
+    </AnchorPane>
+    <HBox layoutY="51">
+        <VBox fx:id="userProfile" minWidth="200" maxWidth="200" spacing="5">
+            <ImageView fx:id="Pic"/>
+            <Label fx:id="username" text="users_name"/>
+            <Label fx:id="TargetSkills" text="Target Skills"/>
+            <VBox fx:id="skills_list">
+                <!--target skills list here-->
+            </VBox>
+        </VBox>
+        <ScrollPane minWidth="500" maxWidth="500" minHeight="350" maxHeight="350">
+            <VBox minWidth="490" maxWidth="490" spacing="5">
+                <HBox spacing="40">
+                    <Label fx:id="Nbook" text="New Book" minWidth="200" maxWidth="300" alignment="CENTER"/>
+                    <Button text="Back" onAction="#back"/>
+                    <Button text="Add" onAction="#addB"/>
+                </HBox>
+                <Line startY="5" startX="5" endY="5" endX="400"/>
+                <!--contents of the new RevBook-->
+                <AnchorPane>
+                    <Label text="Book Title" layoutX="30"/>
+                    <TextField fx:id="book_itle" promptText="Enter book title" layoutX="240" layoutY="2"/>
+                </AnchorPane>
+                <AnchorPane>
+                    <Label text="Total Chapters" layoutX="30"/>
+                    <Spinner fx:id="book_chpts" layoutX="240" layoutY="2" editable="true"/>
+                </AnchorPane>
+                <AnchorPane>
+                    <Label text="Total Pages" layoutX="30"/>
+                    <Spinner fx:id="book_pages" layoutX="240" layoutY="2" editable="true"/>
+                </AnchorPane>
+                <AnchorPane>
+                    <Label text="Progress Chapter" layoutX="30"/>
+                    <Spinner fx:id="book_PChpt" layoutX="240" layoutY="2" editable="true"/>
+                </AnchorPane>
+                <AnchorPane>
+                    <Label text="Progress Page" layoutX="30"/>
+                    <Spinner fx:id="book_PPage" layoutX="240" layoutY="2" editable="true"/>
+                </AnchorPane>
+                <AnchorPane>
+                    <Label text="Book Hardness" layoutX="30"/>
+                    <ChoiceBox fx:id="book_hardness" layoutX="240" layoutY="2"/>
+                </AnchorPane>
+                <AnchorPane>
+                    <Label text="Book Category" layoutX="30"/>
+                    <ChoiceBox fx:id="book_Category" layoutX="240" layoutY="2"/>
+                </AnchorPane>
+                <AnchorPane>
+                    <Label text="Smallest Chapter pages" layoutX="30"/>
+                    <Spinner fx:id="book_lcp" layoutX="240" layoutY="2" editable="true"/>
+                </AnchorPane>
+                <AnchorPane>
+                    <Label text="Medium Chapter pages" layoutX="30"/>
+                    <Spinner fx:id="book_mcp" layoutX="240" layoutY="2" editable="true"/>
+                </AnchorPane>
+                <AnchorPane>
+                    <Label text="Biggest Chapter pages" layoutX="30"/>
+                    <Spinner fx:id="book_hcp" layoutX="240" layoutY="2" editable="true"/>
+                </AnchorPane>
+            </VBox>
+        </ScrollPane>
+    </HBox>
+    <VBox fx:id="footer" layoutY="410" minWidth="700" maxWidth="700">
+        <Label fx:id="footerTag1" text="\@CodTech Works"/>
+        <Label fx:id="footerTag" text="Created By Drillox Hacktory Working Group"/>
+    </VBox>
+</AnchorPane>

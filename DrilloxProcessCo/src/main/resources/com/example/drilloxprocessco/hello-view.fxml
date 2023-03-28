@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.VBox?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ChoiceBox?>
+<AnchorPane fx:id="root1" xmlns:fx="http://javafx.com/fxml"
+            maxWidth="-Infinity" maxHeight="-Infinity" minWidth="-Infinity" minHeight="-Infinity"
+            fx:controller="com.example.drilloxprocessco.HelloController">
+    <AnchorPane fx:id="taskbar" maxWidth="699" minWidth="699">
+        <Label fx:id="icon" text="DPp" layoutX="5"/>
+        <Label fx:id="Title" text="DrilloxPp" layoutX="100" minWidth="600" maxWidth="600" minHeight="49"
+               maxHeight="49"/>
+    </AnchorPane>
+    <HBox  layoutY="51">
+        <VBox  minWidth="200" maxWidth="200" spacing="5" alignment="CENTER">
+            <!--Circle fx:id="profilePic" radius="50" /-->
+            <ImageView fx:id="Pic"/>
+            <Label fx:id="username" text="users_name"/>
+            <Label fx:id="TargetSkills" text="Alarm"/>
+            <VBox>
+                <AnchorPane>
+                    <TextField fx:id="Hour" layoutX="10" promptText="Time(Hours)" prefWidth="50"/>
+                    <TextField fx:id="Min" layoutX="65" promptText="Time(Min)" prefWidth="50"/>
+                    <ChoiceBox fx:id="Track" layoutX="120" prefWidth="75"/>
+                    <HBox layoutY="60">
+                        <Button text="Stop" onAction="#stop"/>
+                        <Button text="Set" onAction="#play"/>
+                    </HBox>
+                </AnchorPane>
+
+                <!--HBox>
+                    <Button text="Play" onAction="#play"/>
+                    <Button text="Pause" onAction="#pause"/>
+                    <Button text="Stop" onAction="#stop"/>
+                </HBox-->
+                <!--skills list here-->
+            </VBox>
+        </VBox>
+        <ScrollPane minWidth="500" maxWidth="500" minHeight="350" maxHeight="350">
+            <VBox minWidth="470" maxWidth="470" spacing="15">
+                <!--contents of the progress-->
+                <AnchorPane>
+                    <AnchorPane>
+                        <padding>
+                            <Insets left="10" right="10" top="3" bottom="3"/>
+                        </padding>
+                        <Label fx:id="RevTitle" text="RevBooks" layoutX="2" layoutY="2"/>
+                        <Button fx:id="AddRev" text="New" layoutX="422" layoutY="2" onAction="#newRev"/>
+                    </AnchorPane>
+                    <Line endX="410"  layoutY="27" layoutX="10"/>
+                    <ListView fx:id="Books_list" layoutY="32" layoutX="20" maxWidth="400" minWidth="400"
+                              prefHeight="0" onMouseClicked="#getDetails">
+                    </ListView>
+                </AnchorPane>
+                <AnchorPane>
+                    <AnchorPane>
+                        <Label fx:id="ProTitle" text="Projects"/>
+                        <Button text="New" layoutX="422" onAction="#newPro"/>
+                    </AnchorPane>
+                    <Line endX="410" layoutY="27" layoutX="10"/>
+                    <ListView fx:id="projects_list" layoutY="32" layoutX="20" maxWidth="400" minWidth="400" prefHeight="0" onMouseClicked="#getDetail">
+                    </ListView>
+                </AnchorPane>
+            </VBox>
+        </ScrollPane>
+    </HBox>
+    <VBox fx:id="footer" layoutY="410" minWidth="700" maxWidth="700">
+        <Label fx:id="footerTag1" text="\@CodTech Works"/>
+        <Label fx:id="footerTag" text="Created By Drillox Hacktory Working Group"/>
+    </VBox>
+</AnchorPane>
